@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        font-family: "Roboto";
+    }
+    fieldset{
+        font-size:14px;
+        width:380px;
+        height:430px;
+        /*line-height:1.8;*/
+        border-radius:7px;
+    }
+    
+    .copy{
+        text-align: bottom;
+    }
+    legend{
+        padding: bottom 2px;
+    }
+    .bg-container{
+        background-size: cover;
+        background-color:#F0D2CC;
+        padding:25px;
+        margin:0;
+    }
+    
+    .section3{
+        display: flex;
+    }
+    .form{
+       margin-left: 400px;
+    }
+    .input-element{
+        border-radius:7px;
+        border-style:solid;
+        border-color:black;
+        border-width:1px;
+        width:90%;
+        height:25px;
+    }
+    .submit-button{
+        background-color:navy;
+        border-style: none;
+        border-width:0;
+        width:90px;
+        height:30px;
+        color:white;
+        border-radius:5px;
+        margin-top:10px;
+    }
+    .label-title{
+        font-size:16px;
+        font-weight:600px;
+    }
+    .form-container{
+        padding-left:20px;
+        padding:10px;
+    }
+    .profile-image{
+        border-radius: 30px;
+    }
+    #third{
+        padding-left: 80px;
+        padding-right:80px;
+    }
+</style>
+<body class = "bg-container">
+    <div >
+        <a href="#second">AboutMe</a>
+        <a href="#third">ContactMe</a>
+        <section id="first">
+            <div>
+                <center>
+                    <h2>Hello</h2>
+                    <h1>I'm Irrinki Neelima Devi</h1>
+                </center>
+                
+                <center>
+                    <div class="center">
+                        <img src="C:/Users/neelimadevi.irrinki/Downloads/WhatsApp Image 2021-11-24 at 4.38.44 PM.jpeg" alt="" width="150" height="300" class = "profile-image"/>
+                    </div>
+                </center>
+           <div class="col-md-8 header-right">
+            
+        
+            <p>I <i>Graduated</i> as Engineer from
+
+                <b><i>Vishnu Institute of Technology</i></b>
+
+                I have done my project in the field of <b>Machine Learning</b>. I currently work for
+
+                <i><b>IVY Comptech</b></i> as <b>Trainee Software Engineer</b>. I have a wide range of skills that include the 
+                technologies Java, Python, C++, .net, spring, mysql.
+            </p>
+            <br/>
+            <p></div>
+            </div>
+        </section>         
+    
+    <hr/>
+        <section id="second">
+            <center><h1>About Me</h1></center>
+            <h2>Skills</h2>
+            <ul>
+                <li>Java</li>
+                <li>Sql</li>
+                <li>Spring</li>
+                <li>Python</li>
+            </ul>
+            <h2>Education</h2>
+            <ul>
+                <li>B.Tech(Computer Science and Engineering)</li>
+                <li>Intermediate(MPC)</li>
+            </ul>
+        </section >
+        <hr/>
+        <section id="third">
+            <center><h2>Contact me</h2></center>
+            <div class="section3">
+                <div class = "location-container">
+                    <h2>Location</h2>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30572.450779399696!2d81.4463923245893!3d16.699069969621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3635a8ac222e73%3A0x170ce312f594cbdd!2sGanapavaram%2C%20Andhra%20Pradesh%20534198!5e0!3m2!1sen!2sin!4v1637149842363!5m2!1sen!2sin" width="300" height="300" style="border:0;" loading="lazy"></iframe>
+                    </div>
+                </div>
+            
+                
+                    <div class="form">
+                        <h2>ContactForm</h2>
+                        <fieldset>
+                            <form class = "form-container">
+                                <div>
+                                    <label for="LastName" class = "label-title">Last Name </label>
+                                    <input  class = "input-element" name="lname" type="text" placeholder="Enter your Last Name"/>
+                                </div><br>
+                                <div>
+                                    <label for="MiddleName" class = "label-title">Middle Name </label>
+                                    <input class = "input-element" name="Mname" type="text" placeholder="Enter your Middle Name"/>
+                                </div><br>
+                                <div>
+                                    <label for="FirstName" class = "label-title">First Name </label>
+                                    <input class = "input-element" name="fname:" type="text" placeholder="Enter your First Name"/>
+                                </div><br>
+                                <div>
+                                    <label for="Emailid" class = "label-title">Email ID </label>
+                                    <input class = "input-element" name="email" type="text" placeholder="abcd@example.com" 
+                                        pattern="^([a-zA-Z0-9]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,5})$"/>
+                                </div><br>
+                                <div>
+                                    <label for="Contact" class = "label-title">Contact </label>
+                                    <input class = "input-element" name="contact" type="tel" placeholder="1234567890"/>
+                                    <p>Note: Please enter a valid <b>10-digit</b> mobile number</p>
+                                </div>
+                                <div>
+                                    <label for="Gender" class = "label-title">Select your Gender </label>
+                                    <label>
+                                        <input type="radio" value="female" name="gender"/> Female
+                                    </label>
+                                    <label>
+                                        <input type="radio" value="male" name="gender"/> Male
+                                    </label>
+                                    <label>
+                                        <input type="radio" value="other" name="gender"/> Other
+                                    </label><br/>
+                                    <label>
+                                        <button class = "submit-button">submit</button>
+                                    </label>                      
+                                </div><br>
+                                
+                            </form>
+                        </fieldset>
+                    </div>
+            </div>
+            
+            
+        </section>
+    </div>
+</body>
+</html>
